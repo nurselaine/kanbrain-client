@@ -2,6 +2,7 @@
   "name": "kanbrain-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nurselaine.github.io/kanbrain-client",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@mantine/core": "^5.9.2",
