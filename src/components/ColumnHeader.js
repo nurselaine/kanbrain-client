@@ -19,7 +19,7 @@ const ColumnHeader = (props) => {
       index: props.column.index,
       _id: props._id
     };
-    fetch(`http://localhost:3001/column/update/${id}`, {
+    fetch(`${process.env.REACT_APP_SERVER}/column/update/${id}`, {
       method: 'PATCH',
       header: {
         'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const ColumnHeader = (props) => {
   }
 
   const deleteColumn = (id) => {
-    fetch(`http://localhost:3001/column/delete/${id}`, {
+    fetch(`${process.env.REACT_APP_SERVER}/column/delete/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'

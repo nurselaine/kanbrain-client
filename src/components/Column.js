@@ -39,7 +39,7 @@ export default function Column() {
 
   const getColumns = async () => {
 
-    fetch(`http://localhost:3001/column`, {
+    fetch(`${process.env.REACT_APP_SERVER}/column`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json'
@@ -54,11 +54,10 @@ export default function Column() {
   }
 
   const getTasks = () => {
-    fetch('http://localhost:3001/task')
+    console.log('hello');
+    fetch(`${process.env.REACT_APP_SERVER}/task`)
       .then(res => res.json())
       .then(data => {
-        // console.log(data[0]);
-        // console.log(data);
         setBoardId(data[0]._id);
         setTasks(data[0].tasks);
       })
@@ -104,7 +103,7 @@ export default function Column() {
       tasks: tasks
     }
     console.log(body);
-    fetch(`http://localhost:3001/task/save/${boardId}`, {
+    fetch(`${process.env.REACT_APP_SERVER}/task/save/${boardId}`, {
       method: 'PATCH',
       headers: {
         'Content-type': 'application/json',
