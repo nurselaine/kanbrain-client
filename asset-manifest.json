@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kanbrain-client/static/css/main.df1276cc.css",
-    "main.js": "/kanbrain-client/static/js/main.a6b84c6f.js",
+    "main.js": "/kanbrain-client/static/js/main.b351306c.js",
     "index.html": "/kanbrain-client/index.html",
     "main.df1276cc.css.map": "/kanbrain-client/static/css/main.df1276cc.css.map",
-    "main.a6b84c6f.js.map": "/kanbrain-client/static/js/main.a6b84c6f.js.map"
+    "main.b351306c.js.map": "/kanbrain-client/static/js/main.b351306c.js.map"
   },
   "entrypoints": [
     "static/css/main.df1276cc.css",
-    "static/js/main.a6b84c6f.js"
+    "static/js/main.b351306c.js"
   ]
 }
